@@ -1,0 +1,11 @@
+# ninja log v5
+0	397	1645470467288003672	CMakeFiles/queue.dir/main.cpp.o	b0d8c3538f50b548
+0	38	1645470810966731745	build.ninja	cb307f49d073c357
+0	3	0	clean	c449ddf34ec3fa0c
+2	882	1645470812646616849	CMakeFiles/queue.dir/queue.cpp.o	a088c201ea11f598
+1	953	1645470812714612200	CMakeFiles/queue.dir/Extended_queue.cpp.o	66468e15fe735a0b
+1	961	1645470812722611652	CMakeFiles/queue.dir/Utility.cpp.o	43f69f266beb7366
+1	999	1645470812762608917	CMakeFiles/queue.dir/main.cpp.o	b0d8c3538f50b548
+3	1035	1645470812798606456	CMakeFiles/queue.dir/Functions.cpp.o	db903df703581a01
+2	1035	1645470812798606456	CMakeFiles/queue.dir/Stack.cpp.o	f310732d54dbe7d0
+1036	1118	1645470812878600986	queue	47ea7ee17e4d6095
