@@ -5,7 +5,7 @@
 
 // Section 2.2:
 
-typedef int Stack_entry;
+typedef char Stack_entry;
 
 const int maxstack = 1000;   //  small value for testing
 

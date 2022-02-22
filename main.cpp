@@ -37,11 +37,23 @@ int main(int argc, char* argv[]) {
     */
 
     Extended_queue queue;
-    std::string line;
+    int pos, counter= 0;
+    std::string line,right,left;
     std::cout << "Give line: ";
     std::getline(std::cin,line, '\n');
 
-    
+    for (int i=0; i<line.length(); i++){
+        if (line[i] != ':')
+        queue.append(line[i]);
+        else{
+            counter++;
+            pos = line.find(':') + 1;
+            right = line.substr(pos);
+            break;
+        }
+    }
+    std::cout << line << "\n" << right;
+
 
 
     return 0;

@@ -3,7 +3,7 @@
 #include "Header.h"
 #include "Utility.h"
 
-typedef int Queue_entry;
+typedef char Queue_entry;
 
 const int maxqueue = 10; //  small value for testing
 

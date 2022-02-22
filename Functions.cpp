@@ -109,7 +109,7 @@ void introduction(){
 }
 
 Error_code stack_to_queue(Stack& stack, Extended_queue& queue) {
-    int temp;
+    char temp;
     if (stack.size() == 0) return underflow;
     else {
         while(!stack.empty()){
@@ -125,7 +125,7 @@ Error_code stack_to_queue(Stack& stack, Extended_queue& queue) {
 
 
 void print_queue(Extended_queue & queue)  {
-    int temp;
+    char temp;
     while (!queue.empty()) {
         queue.serve_and_retrieve(temp);
         std::cout << temp << " ";
@@ -138,7 +138,7 @@ Error_code queue_to_stack(Extended_queue & queue, Stack & stack) {
         return underflow;
     }
     else {
-        int temp;
+        char temp;
         while (!queue.empty()){
         queue.serve_and_retrieve(temp);
         stack.push(temp);
@@ -152,7 +152,7 @@ void print_stack(Stack & stack) {
         std::cout << "Stack is empty.\n";
     }
     else {
-        int temp;
+        char temp;
         while (!stack.empty()){
             stack.top(temp);
             std::cout << temp << " ";
@@ -163,7 +163,7 @@ void print_stack(Stack & stack) {
 
 Error_code stack_change(Stack & original, Stack & source)  {
         Stack temp;
-        int x;
+        char x;
         if (original.empty()) {
             std::cout << "Original stack is empty\n";
             return underflow;}
@@ -183,7 +183,7 @@ Error_code stack_change(Stack & original, Stack & source)  {
 }
 
 Error_code stack_change_same_order(Stack & original, Stack & dest) {
-    int x;
+    char x;
     if (original.empty()) {
         std::cout << "Original stack is empty\n";
         return underflow;}
@@ -200,7 +200,7 @@ Error_code stack_change_same_order(Stack & original, Stack & dest) {
 
 Error_code stack_change_with_local_stack(Stack & source) {
     Stack temp;
-    int x;
+    char x;
     if(source.empty()){
         std::cout << "Stack is empty.\n";
         return underflow;
@@ -221,7 +221,7 @@ Error_code stack_change_with_local_stack(Stack & source) {
 }
 Error_code stack_change_with_queue(Stack & source) {
     Extended_queue queue;
-    int temp;
+    char temp;
     if (source.empty()){
         std::cout << "Stack is empty.\n";
         return underflow;
