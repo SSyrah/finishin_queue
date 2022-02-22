@@ -241,6 +241,16 @@ Error_code stack_change_with_queue(Stack & source) {
     return success;
 }
 
+void comparison_instructions(){
+    std::cout << "Enter input, use ':' mark for separating lines to compare(f.eg sample:sample)\n"
+                 "Program shows one of following symbols after comparison;\n"
+              << "N        No colon on the line.\n"
+                 "L        The left part (before the colon) is longer than the right.\n"
+                 "R        The right part (after the colon) is longer than the left.\n"
+                 "D        The left and right parts have the same length but are different.\n"
+                 "S        The left and right parts are exactly the same.\n"
+                  "\n\n";
+}
 
 
 

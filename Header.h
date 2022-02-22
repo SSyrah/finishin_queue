@@ -18,5 +18,6 @@ Error_code stack_change(Stack&, Stack&);
 Error_code stack_change_same_order(Stack&, Stack&);
 Error_code stack_change_with_local_stack(Stack&);
 Error_code stack_change_with_queue(Stack&);
+void comparison_instructions();
 
 #endif //UNTITLED_HEADER_H
