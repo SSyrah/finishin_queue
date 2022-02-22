@@ -36,8 +36,10 @@ int main(int argc, char* argv[]) {
     std::cout << temp << "\n";
     */
 
+
     Extended_queue queue;
     int pos, counter= 0;
+    char c;
     std::string line,right,left;
     std::cout << "Give line: ";
     std::getline(std::cin,line, '\n');
@@ -52,9 +54,33 @@ int main(int argc, char* argv[]) {
             break;
         }
     }
-    std::cout << line << "\n" << right;
 
+    pos = 0;
+    while(!queue.empty()){
+        queue.serve_and_retrieve(c);
+        left.insert(pos, 1, c);
+        pos++;
+    }
+    std::cout << "Line:  " << line  << "\nright:  " << right << "\nleft:  " << left << "\n";
 
+    if (line.find(":") == std::string::npos){
+        std::cout << "N\n";
+    }
+    else if (right == left){
+        std::cout << "S\n";
+    }
+    else if (right.size() < left.size()){
+        std::cout << "L\n";
+    }
+    else if (right.size() > left.size()){
+        std::cout << "R\n";
+    }
+    else if (right.size() == left.size()){
+        std::cout << "D\n";
+    }
+    else{
+        std::cout << "Cannot do the comparison\n";
+    }
 
     return 0;
 }
